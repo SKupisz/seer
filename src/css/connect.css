@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body{
+  background-image: url("../img/textured_paper.png");
+}
+.main-header{
+  font-size: 2.4em;
+  font-family: 'Lato',sans-serif;
+}
+.form-wrapper{
+  width: 90%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: rgba(1,1,1,.4);
+}
+.connect-input{
+  width: 60%;
+  font-size: 1.5em;
+  font-family: 'Lato',sans-serif;
+  padding: 5px;
+  background: #eee;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.submit-button{
+  width: 40%;
+  font-size: 1.6em;
+  font-family: 'Lato',sans-serif;
+  padding: 5px;
+  margin-top: 60px;
+  border: none;
+  border-radius: 5px;
+  transition: filter 0.5s;
+  cursor: pointer;
+}
+button[class="submit-button"]:hover{
+  filter: brightness(70%);
+}

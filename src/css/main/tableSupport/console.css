@@ -1,0 +1,27 @@
+.query-content{
+  width: 80%;
+  font-size: 1em;
+  font-family: 'Lato',sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255,255,255,.7);
+  max-width: 80%;
+  min-width: 70%;
+  min-height: 200px;
+}
+.queries-submitBtn{
+  width: 30%;
+  font-size: 1.2em;
+  font-family: 'Lato',sans-serif;
+  border: none;
+  border-radius: 5px;
+  background: rgba(1,1,1,.5);
+  padding: 10px;
+  margin-top: 11px;
+  transition: filter 0.4s;
+}
+button[class="queries-submitBtn"]:hover{
+  filter: blur(1px);
+}

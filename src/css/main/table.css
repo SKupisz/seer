@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("./tableSupport/bar.css");
+@import url("./tableSupport/structure.css");
+@import url("./tableSupport/console.css");
+@import url("./tableSupport/insert.css");
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("../../img/textured_paper.png");
+  font-family: 'Lato',sans-serif;
+}
+.failure{
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+}
+.showing-records,.queries,.structure,.insert{
+  margin-top: 110px;
+}
+.queries,.structure,.insert{
+  display: none;
+  text-align: center;
+}
+.table-header,.table-headerSigning,.table-el{
+  display: inline-block;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  text-align: center;
+}
+.table-headerSigning,.table-elChoose{
+  width: 50px;
+}
+.table-headerSigning{
+  text-align: center;
+}
+.table-elChoose{
+  display: inline-block;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+text-align: center;
+}
+.table-header,.table-headerSigning{
+  font-size: 1.4em;
+  align-items: center;
+}
+.table-row{
+  width: 100%;
+  float: left;
+}
+.table-el,.table-elChoose{
+  font-family: 1em;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.table-elnormal{
+  display: inline-block;
+  z-index: 99;
+}
+.table-elextended{
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
+  display: none;
+  z-index: 11;
+  position: relative;
+  top: 0px; left: 0px;
+}
+div[class="table-el"]:hover > .table-elnormal{
+  display: none;
+}
+div[class="table-el"]:hover > .table-elextended{
+  display: inline-block;
+
+}

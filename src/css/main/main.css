@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("../../img/textured_paper.png");
+}
+.menu{
+  width: 100px;
+  height: 100%;
+  background: #eee;
+  position: fixed; top: 0px; left: 0px;
+  padding: 5px;
+}
+.menu-item{
+  font-size: 1em;
+  padding: 2px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Lato',sans-serif;
+  cursor: pointer;
+  z-index: 2;
+}
+.main-content{
+  width: calc(100% - 110px);
+  height: 100%;
+  position: absolute; top: 0px; left: 110px;
+}
+.main-header{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  font-family: 'Lato',sans-serif;
+  width: 100%;
+  text-align: center;
+  background: #eee;
+  position: fixed; top: 0px; left: 110px;
+  z-index: 2;
+}
+.table-rows{
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.table-name{
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.6em;
+  font-family: 'Lato',sans-serif;
+  background: rgba(1,1,1,.4);
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: filter 0.43s;
+  outline-color: none;
+}
+button[class="table-name"]:hover{
+  filter: blur(1px);
+}
+.wrong-connection{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.9em;
+  font-family: 'Lato',sans-serif;
+}

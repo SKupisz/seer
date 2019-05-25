@@ -1,0 +1,36 @@
+.structure-header{
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+.column-row{
+  width: calc(100% - 10px);
+  height: 40px;
+  font-size: 1.1em;
+  padding: 5px;
+  margin-bottom: 2px;
+  float: left;
+  background: rgba(1,1,1,.3);
+}
+.column-name{
+  float: left;
+  margin-left: 5px;
+  width: 100px;
+  text-align: center;
+  height: 40px;
+  margin-right: 10px;
+}
+.column-type,.column-primary,.column-null,.column-extra,
+.column-default{
+  float: left;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  margin-right: 15px;
+}
+div[class="column-name"]:hover > .table-elnormal{
+  display: none;
+}
+div[class="column-name"]:hover > .table-elextended{
+  display: inline-block;
+
+}
