@@ -15,6 +15,7 @@ $host = $_SESSION['host'];
 $db_user = $_SESSION['user'];
 $db_password = $_SESSION['pass'];
 $db_name = $_SESSION['dbname'];
+$typesTranslation = ["int(11)"=>"number","text"=>"text"];
 $conn = 1;
 try {
   $connection = new mysqli($host,$db_user,$db_password,$db_name);

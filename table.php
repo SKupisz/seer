@@ -22,6 +22,11 @@ require_once "./src/logic/loadTableData.php";
       <button class = "panel-item insertBtn">
         Insert
       </button>
+      <a href = "./src/logic/end.php">
+      <button class = "panel-item closeBtn">
+        Close connection
+      </button>
+    </a>
       <?php
       if(isset($_SESSION['query_fail']))
       {
@@ -29,6 +34,13 @@ require_once "./src/logic/loadTableData.php";
           <?php echo $_SESSION['query_fail'];?>
         </div><?php
         unset($_SESSION['query_fail']);
+      }
+      if(isset($_SESSION['insert_fail']))
+      {
+        ?><div class = "failure">
+          <?php echo $_SESSION['insert_fail'];?>
+        </div><?php
+        unset($_SESSION['insert_fail']);
       }
       ?>
     </section>
@@ -76,12 +88,9 @@ require_once "./src/logic/loadTableData.php";
   <?php
   require_once "./src/components/tableSupport/showing.php";
   require_once "./src/components/tableSupport/queries.php";
+  require_once "./src/components/tableSupport/insert.php";
   ?>
-  <section class = "insert">
-    <header class = "insert-header">
-      Insert
-    </header>
-  </section>
+
   </body>
   <script src = "./src/js/table.js"></script>
 </html>

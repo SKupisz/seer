@@ -22,7 +22,6 @@ try {
     throw new Exception($polaczenie->connect_error);
   }
   else {
-    echo "jestem";
     $_SESSION['host'] = $host;
     $_SESSION['user'] = $user;
     $_SESSION['pass'] = $pass;

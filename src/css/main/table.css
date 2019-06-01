@@ -3,6 +3,7 @@
 @import url("./tableSupport/structure.css");
 @import url("./tableSupport/console.css");
 @import url("./tableSupport/insert.css");
+@import url("./tableSupport/tableMenu.css");
 body{
   margin: 0;
   padding: 0;
