@@ -19,6 +19,7 @@ body{
   font-family: 'Lato',sans-serif;
   cursor: pointer;
   z-index: 2;
+  margin-bottom: 10px;
 }
 .main-content{
   width: calc(100% - 110px);

@@ -10,11 +10,7 @@ if(!isset($_GET['tbn']))
   header("Location: main.php");
   exit();
 }
-$name = $_GET['tbn'];
-$host = $_SESSION['host'];
-$db_user = $_SESSION['user'];
-$db_password = $_SESSION['pass'];
-$db_name = $_SESSION['dbname'];
+require_once "src/components/logicSupport/connectionData.php";
 $typesTranslation = ["int(11)"=>"number","text"=>"text"];
 $conn = 1;
 try {
@@ -32,6 +28,8 @@ try {
     $types = Array();
     $default = Array();
     $extra = Array();
+    $primaryKey = '';
+    $primaryKeyNumber = 0;
     for($i = 0 ; $i < $howMany; $i++)
     {
       $row = $query->fetch_array();
@@ -39,6 +37,11 @@ try {
       $types[$i] = $row[1];
       $null[$i] = $row[2];
       $pri[$i] = $row[3];
+      if($pri[$i] == "PRI")
+      {
+        $primaryKey = $titles[$i];
+        $primaryKeyNumber = $i;
+      }
       $default[$i] = $row[4];
       $extra[$i] = $row[5];
     }
