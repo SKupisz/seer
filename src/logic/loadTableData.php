@@ -17,7 +17,7 @@ try {
   $connection = new mysqli($host,$db_user,$db_password,$db_name);
   if($connection->connect_errno != 0)
   {
-    throw new Exception($polaczenie->connect_error);
+    throw new Exception($connection->connect_error);
   }
   else {
     $query = $connection->query("DESCRIBE $name");
